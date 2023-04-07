@@ -95,13 +95,12 @@ class Main_game():
 
 
 class main_menu():
-    def __init__(self,screen,sprite_sheet,background,font):
+    def __init__(self,screen,sprite_sheet,background):
         self.screen = screen
         self.x = (self.screen.get_width() / 2) - 200
         self.y = (self.screen.get_height() / 2) - 350
         self.background = background
         self.sprite_sheet = sprite_sheet
-        self.font = font
         self.tear = self.sprite_sheet.parse_sprite("paper_tear.png")
         self.title = self.sprite_sheet.parse_sprite("doodle-jump@2x.png")
         self.enemies = pygame.sprite.Group()
