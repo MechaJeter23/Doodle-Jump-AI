@@ -135,7 +135,7 @@ class main_menu():
         self.buttons.draw(self.screen)
         self.screen.blit(self.tear,(0,self.screen.get_height() - 100))
         self.enemies.draw(self.screen)
-        self.screen.blit(self.font.render("By Garrett Ashley and Evan Ashley",0,(0,0,0)),(self.x + 100,self.y + 100))
+        self.screen.blit(self.font.render("By Garrett and Evan",0,(0,0,0)),(self.x + 100,self.y + 100))
 
 class Paused():
     def __init__(self,screen,background):
