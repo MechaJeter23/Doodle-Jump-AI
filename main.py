@@ -21,8 +21,8 @@ def main():
     clock = pygame.time.Clock()
     running = True
     Scenes = {
-        screens.Scenes.MENU: screens.main_menu(screen,SPRITESHEET,BACKGROUND,FONT),
-        screens.Scenes.MAIN_GAME: screens.Main_game(screen,SPRITESHEET,BACKGROUND),
+        screens.Scenes.MENU: screens.main_menu(screen,SPRITESHEET,BACKGROUND),
+        screens.Scenes.MAIN_GAME: screens.Main_game(screen,SPRITESHEET,BACKGROUND,FONT),
         screens.Scenes.GAME_OVER: screens.Game_over(screen,SPRITESHEET,BACKGROUND,FONT),
         screens.Scenes.PAUSED: screens.Paused(screen,SPRITESHEET.parse_sprite("pause-cover@2x.png"))
     }
